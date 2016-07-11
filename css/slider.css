@@ -2,6 +2,15 @@
 /* LAYOUT */
 
 .container {
+    opacity: 0;
+    animation: 1s linear 8s 1 both container-display;
+}
+@keyframes container-display {
+    from {} to {
+        opacity: 1;
+    }
+}
+.container {
     margin: 0 auto;
     overflow: hidden;
     width: 960px;
@@ -46,24 +55,19 @@
     height: 100%;
 }
 #slider li.slide-item:nth-child(1) {
-    -moz-animation: cycle 25s linear infinite;
-    -webkit-animation: cycle 25s linear infinite;
+    animation: cycle 25s linear 9s infinite;
 }
 #slider li.slide-item:nth-child(2) {
-    -moz-animation: cycletwo 25s linear infinite;
-    -webkit-animation: cycletwo 25s linear infinite;
+    animation: cycletwo 25s linear 9s infinite;
 }
 #slider li.slide-item:nth-child(3) {
-    -moz-animation: cyclethree 25s linear infinite;
-    -webkit-animation: cyclethree 25s linear infinite;
+    animation: cyclethree 25s linear 9s infinite;
 }
 #slider li.slide-item:nth-child(4) {
-    -moz-animation: cyclefour 25s linear infinite;
-    -webkit-animation: cyclefour 25s linear infinite;
+    animation: cyclefour 25s linear 9s infinite;
 }
 #slider li.slide-item:nth-child(5) {
-    -moz-animation: cyclefive 25s linear infinite;
-    -webkit-animation: cyclefive 25s linear infinite;
+    animation: cyclefive 25s linear 9s infinite;
 }
 #slider .tooltip {
     background: rgba(0, 0, 0, 0.7);
@@ -72,8 +76,7 @@
     position: relative;
     bottom: 75px;
     left: -320px;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 #slider .tooltip h1 {
     color: #fff;
@@ -82,13 +85,12 @@
     line-height: 60px;
     padding: 0 0 0 20px;
 }
-#slider li.slide-item:hover .tooltip,
-left:0px;
+#slider li.slide-item:hover .tooltip {
+    left: 0px;
 }
 #slider:hover li,
 #slider:hover .progress-bar {
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 }
 /* PROGRESS BAR */
 
@@ -98,8 +100,8 @@ left:0px;
     width: 680px;
     height: 5px;
     background: #000;
-    -moz-animation: fullexpand 25s ease-out infinite;
-    -webkit-animation: fullexpand 25s ease-out infinite;
+    -moz-animation: fullexpand 25s ease-out 9s infinite;
+    -webkit-animation: fullexpand 25s ease-out 9s infinite;
 }
 /* ANIMATION */
 

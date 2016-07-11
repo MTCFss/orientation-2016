@@ -41,7 +41,7 @@ body {
 #slide > img {
     width: 250px;
     height: 250px;
-    box-shadow: solid 50px black;
+    box-shadow: black 50px;
     border-radius: 50px;
     display: block;
     margin: auto;
@@ -75,7 +75,7 @@ body {
     100% {
         width: 250px;
         height: 250px;
-        margin: 5px auto auto 5px !important;
+        margin: 5px auto auto 5px;
         right: 100%;
         bottom: 80%;
     }
@@ -96,7 +96,7 @@ body {
     100% {
         width: 180px;
         height: 180px;
-        margin: 5px auto auto 5px !important;
+        margin: 5px auto auto 5px;
         left: 80%;
         bottom: 80%;
     }
