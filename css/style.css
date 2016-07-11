@@ -1,8 +1,10 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100% !important;
-  height: 100% !important;
+@charset "UTF-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 /*
 body {
@@ -11,106 +13,107 @@ body {
   animation: 3s linear 0s 1 both body-bg;
 }
 */
+
 #bg {
-  position: fixed;
-  background-image: url('../imgs/blue-coding-programming.jpg');
-  background-position: center;
-  background-size: auto 100%;
-  display: block;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(7px);
-  filter: blur(5px);
-  height: 100%;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  //animation: 8s alternate 0s infinite bg;
+    position: fixed;
+    background-image: url('../imgs/blue-coding-programming.jpg');
+    background-position: center;
+    background-size: auto 100%;
+    display: block;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(7px);
+    filter: blur(5px);
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    //animation: 8s alternate 0s infinite bg;
 }
 #slide {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  //padding-top: 50px;
-  width: 100%;
-  height: 100%;
-}
-#slide img {
-  width: 250px;
-  height: 250px;
-  box-shadow: solid 50px black;
-  border-radius: 50px;
-  display: block;
-  
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
-#fss-logo {
-  animation: 3s ease-out 1s 1 both fss-logo;
-  //margin: 5px auto  auto 5px !important;;
-  //box-shadow: 5px 5px 5px rgba(0,0,0,0.3), -5px -5px 5px rgba(0,0,0,0.3);
-}
-
-#fss-dic-logo {
-  animation: 3s ease-out 5s 1 both fss-dic-logo;
-}
-@keyframes fss-logo {
-  0% {
-    width: 250px;
-    height: 250px;
-  }
-  50% {
-    width: 450px;
-    height: 450px;
+    position: fixed;
+    left: 0;
     right: 0;
-    bottom: 0;
-  }
-  100% {
-    width: 250px;
-    height: 250px;
-    margin: 5px auto  auto 5px !important;
-    right: 100%;
-    bottom: 80%;
-  }
+    z-index: 1;
+    //padding-top: 50px;
+    width: 100%;
+    height: 100%;
 }
-@keyframes fss-dic-logo {
-  0% {
-    opacity: 0;
-    width: 150px;
-    height: 150px;
-  }
-  50% {
-    opacity: 1;
+#slide > img {
     width: 250px;
     height: 250px;
+    box-shadow: solid 50px black;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
     left: 0;
     bottom: 0;
-  }
-  100% {
-    width: 150px;
-    height: 150px;
-    margin: 5px auto  auto 5px !important;
-    left: 80%;
-    bottom: 80%;
-  }
+    right: 0;
+}
+#fss-logo {
+    -webkit-animation: 3s ease-out 1s 1 both fss-logo;
+    animation: 3s ease-out 1s 1 both fss-logo;
+    //margin: 5px auto  auto 5px !important;;
+    //box-shadow: 5px 5px 5px rgba(0,0,0,0.3), -5px -5px 5px rgba(0,0,0,0.3);
+}
+#fss-dic-logo {
+    -webkit-animation: 3s ease-out 5s 1 both fss-dic-logo;
+}
+@keyframes fss-logo {
+    0% {
+        width: 250px;
+        height: 250px;
+    }
+    50% {
+        width: 450px;
+        height: 450px;
+        right: 0;
+        bottom: 0;
+    }
+    100% {
+        width: 250px;
+        height: 250px;
+        margin: 5px auto auto 5px !important;
+        right: 100%;
+        bottom: 80%;
+    }
+}
+@keyframes fss-dic-logo {
+    0% {
+        opacity: 0;
+        width: 180px;
+        height: 180px;
+    }
+    50% {
+        opacity: 1;
+        width: 350px;
+        height: 350px;
+        left: 0;
+        bottom: 0;
+    }
+    100% {
+        width: 180px;
+        height: 180px;
+        margin: 5px auto auto 5px !important;
+        left: 80%;
+        bottom: 80%;
+    }
 }
 @keyframes body-bg {
-  from {
-  }
-  to {
-    background-color: DarkSlateGray;
-  }
+    from {} to {
+        background-color: DarkSlateGray;
+    }
 }
 @keyframes bg {
-  to {
-    background-position: 50%;
-  }
+    to {
+        background-position: 50%;
+    }
 }
 #fss-text {
-    
-    margin: 50px auto 0 auto !important; ;
-  display: block;
+    margin: 50px auto 0 auto !important;
+    ;
+    display: block;
     text-transform: uppercase;
     font-size: 3em;
     text-align: center;
@@ -126,42 +129,40 @@ body {
     //box-shadow: 0px 9.68056px 9.68056px rgba(0,0,0,1) inset;
 }
 #fss-text .letter {
-  display: inline-block;
-  top: -15.2666px;
-  padding: .2em 0;
-  width: 1.5em;
-  position: relative;
-        margin: 0px -18px;
-
-
+    display: inline-block;
+    top: -15.2666px;
+    padding: .2em 0;
+    width: 1.5em;
+    position: relative;
+    margin: 0px -18px;
 }
 #fss-text .letter:nth-child(odd) {
-  animation: 4s linear 2s infinite both fss-text-letter-odd ;
-  transform: scaleX(0.515972) skewY(21.7813deg);
-  background: #a93629 url(../imgs/dots.png) center top;
+    -webkit-animation: 4s linear 2s infinite both fss-text-letter-odd;
+    animation: 4s linear 2s infinite both fss-text-letter-odd;
+    -webkit-transform: scaleX(0.515972) skewY(21.7813deg);
+    transform: scaleX(0.515972) skewY(21.7813deg);
+    background: #a93629 url(../imgs/dots.png) center top;
 }
-
 #fss-text .letter:nth-child(even) {
-  animation: 4s linear 4s infinite both fss-text-letter-even ;
-  transform: scaleX(0.515972) skewY(-21.7813deg);
-  background: #e24b3b url(../imgs/dots.png) left top;
- }
-#fss-text .letter:first-child {
-  //border-radius: 20px 0 0 20px;
+    -webkit-animation: 4s linear 4s infinite both fss-text-letter-even;
+    animation: 4s linear 4s infinite both fss-text-letter-even;
+    -webkit-transform: scaleX(0.515972) skewY(-21.7813deg);
+    transform: scaleX(0.515972) skewY(-21.7813deg);
+    background: #e24b3b url(../imgs/dots.png) left top;
 }
-
+#fss-text .letter:first-child {
+    //border-radius: 20px 0 0 20px;
+}
 #fss-text .letter:last-child {
-  //border-radius: 0 20px 20px 0;
+    //border-radius: 0 20px 20px 0;
 }
 @keyframes fss-text-letter-odd {
-  50% {
-  background-color: rgb(255, 179, 40);    
-  }
+    50% {
+        background-color: rgb(255, 179, 40);
+    }
 }
-
 @keyframes fss-text-letter-even {
-  50% {
-  
-  background-color: rgb(215, 139, 0);
- }
+    50% {
+        background-color: rgb(215, 139, 0);
+    }
 }
