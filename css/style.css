@@ -59,6 +59,7 @@ body {
 }
 #fss-dic-logo {
     -webkit-animation: 3s ease-out 5s 1 both fss-dic-logo;
+    animation: 3s ease-out 5s 1 both fss-dic-logo;
 }
 @keyframes fss-logo {
     0% {
