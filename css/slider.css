@@ -55,19 +55,19 @@
     height: 100%;
 }
 #slider li.slide-item:nth-child(1) {
-    animation: cycle 25s linear 9s infinite;
+    animation: cycle 25s linear 8s infinite;
 }
 #slider li.slide-item:nth-child(2) {
-    animation: cycletwo 25s linear 9s infinite;
+    animation: cycletwo 25s linear 8s infinite;
 }
 #slider li.slide-item:nth-child(3) {
-    animation: cyclethree 25s linear 9s infinite;
+    animation: cyclethree 25s linear 8s infinite;
 }
 #slider li.slide-item:nth-child(4) {
-    animation: cyclefour 25s linear 9s infinite;
+    animation: cyclefour 25s linear 8s infinite;
 }
 #slider li.slide-item:nth-child(5) {
-    animation: cyclefive 25s linear 9s infinite;
+    animation: cyclefive 25s linear 8s infinite;
 }
 #slider .tooltip {
     background: rgba(0, 0, 0, 0.7);
@@ -100,8 +100,8 @@
     width: 680px;
     height: 5px;
     background: #000;
-    -moz-animation: fullexpand 25s ease-out 9s infinite;
-    -webkit-animation: fullexpand 25s ease-out 9s infinite;
+    -moz-animation: fullexpand 25s ease-out 8s infinite;
+    -webkit-animation: fullexpand 25s ease-out 8s infinite;
 }
 /* ANIMATION */
 

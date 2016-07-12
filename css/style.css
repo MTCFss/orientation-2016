@@ -39,10 +39,6 @@ body {
     height: 100%;
 }
 #slide > img {
-    width: 250px;
-    height: 250px;
-    box-shadow: black 50px;
-    border-radius: 50px;
     display: block;
     margin: auto;
     position: absolute;
@@ -54,51 +50,57 @@ body {
 #fss-logo {
     -webkit-animation: 3s ease-out 1s 1 both fss-logo;
     animation: 3s ease-out 1s 1 both fss-logo;
-    //margin: 5px auto  auto 5px !important;;
-    //box-shadow: 5px 5px 5px rgba(0,0,0,0.3), -5px -5px 5px rgba(0,0,0,0.3);
+    //margin: 5px 5px auto auto ;
+    width: 250px;
+    //height: 250px;
 }
 #fss-dic-logo {
     -webkit-animation: 3s ease-out 5s 1 both fss-dic-logo;
     animation: 3s ease-out 5s 1 both fss-dic-logo;
+    width: 180px;
+    height: 180px;
+    opacity: 0;
 }
 @keyframes fss-logo {
     0% {
-        width: 250px;
-        height: 250px;
     }
     50% {
         width: 450px;
-        height: 450px;
+        //height: 450px;
         right: 0;
         bottom: 0;
+        transform: translate(0%, 0%);
     }
     100% {
-        width: 250px;
-        height: 250px;
-        margin: 5px auto auto 5px;
+       //padding: 90px 0 0 10px;
+        //margin-left: 0 !important;
+        //margin-top: 0;
         right: 100%;
-        bottom: 80%;
+        bottom: 100%;
+        //margin: 50px 0 0 100px !important;;
+        transform: translate(0%, 50%);
     }
 }
 @keyframes fss-dic-logo {
     0% {
-        opacity: 0;
-        width: 180px;
-        height: 180px;
+        margin: auto;
     }
     50% {
+        margin: auto;
         opacity: 1;
         width: 350px;
         height: 350px;
         left: 0;
         bottom: 0;
+       transform: translate(0%, 0%);
     }
     100% {
-        width: 180px;
-        height: 180px;
-        margin: 5px auto auto 5px;
-        left: 80%;
-        bottom: 80%;
+        opacity: 1;
+        left: 100%;
+        bottom: 100%;
+        //margin: 5px 5px auto auto  !important;
+        //padding: 50px 1000px  0 0;
+        transform: translate(-100%, 50%);
     }
 }
 @keyframes body-bg {
