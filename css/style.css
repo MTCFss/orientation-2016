@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes|Parisienne);
+
 html,
 body {
     margin: 0;
@@ -173,8 +175,8 @@ body {
     top:0;
     bottom: 0;
     height: 20px;
-    margin: auto 20px auto 0;
-    width: 200px;
+    margin: auto 50px auto 0;
+    width: 235px;
 }
 #subtext {
     display: block;
@@ -183,4 +185,35 @@ body {
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
+}
+#mtcfss-text .word, #subtext .word{
+    display: inline-block;
+    padding: 0 9px;
+    line-height: 3;
+}
+#mtcfss-text .word:nth-child(1), #mtcfss-text .word:nth-child(3) {
+    color: DarkBlue;
+    text-shadow: 3px 3px  rgba(0,0,0,0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    font: 42px "Nimbus Sans L", sans-serif;
+    color: #174157;
+    letter-spacing:  3px;
+    font-family: fantasy;
+    padding: 0;
+
+}
+
+#mtcfss-text .word:nth-child(2) {
+    color: #174157;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.6);
+    font-weight:  400;
+    letter-spacing:  2.5px;
+    font-size: xx-large;
+    /*font-family: 'Parisienne', cursive;*/
+    font-family: 'Great Vibes', cursive;
+}
+#mtcfss-text .word:nth-child(3) {
+    letter-spacing:  10px;
+    padding: 0 9px;
 }
