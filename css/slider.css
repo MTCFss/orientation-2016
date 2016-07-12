@@ -55,19 +55,28 @@
     height: 100%;
 }
 #slider li.slide-item:nth-child(1) {
-    animation: cycle 25s linear 8s infinite;
+    animation: slide-n 32s linear 7s infinite;
 }
 #slider li.slide-item:nth-child(2) {
-    animation: cycletwo 25s linear 8s infinite;
+    animation: slide-n 32s linear 11s infinite;
 }
 #slider li.slide-item:nth-child(3) {
-    animation: cyclethree 25s linear 8s infinite;
+    animation: slide-n 32s linear 15s infinite;
 }
 #slider li.slide-item:nth-child(4) {
-    animation: cyclefour 25s linear 8s infinite;
+    animation: slide-n 32s linear 19s infinite;
 }
 #slider li.slide-item:nth-child(5) {
-    animation: cyclefive 25s linear 8s infinite;
+    animation: slide-n 32s linear 23s infinite;
+}
+#slider li.slide-item:nth-child(6) {
+    animation: slide-n 32s linear 27s infinite;
+}
+#slider li.slide-item:nth-child(7) {
+    animation: slide-n 32s linear 31s infinite;
+}
+#slider li.slide-item:nth-child(8) {
+    animation: slide-n 32s linear 35s infinite;
 }
 #slider .tooltip {
     background: rgba(0, 0, 0, 0.7);
@@ -102,185 +111,6 @@
     background: #000;
     -moz-animation: fullexpand 25s ease-out 8s infinite;
     -webkit-animation: fullexpand 25s ease-out 8s infinite;
-}
-/* ANIMATION */
-
-@keyframes cycle {
-    0% {
-        top: 0px;
-    }
-    4% {
-        top: 0px;
-    }
-    16% {
-        top: 0px;
-        opacity: 1;
-        z-index: 0;
-    }
-    20% {
-        top: 485px;
-        opacity: 0;
-        z-index: 0;
-    }
-    21% {
-        top: -485px;
-        opacity: 0;
-        z-index: -1;
-    }
-    92% {
-        top: -485px;
-        opacity: 0;
-        z-index: 0;
-    }
-    96% {
-        top: -485px;
-        opacity: 0;
-    }
-    100% {
-        top: 0px;
-        opacity: 1;
-    }
-}
-@keyframes cycletwo {
-    0% {
-        top: -485px;
-        opacity: 0;
-    }
-    16% {
-        top: -485px;
-        opacity: 0;
-    }
-    20% {
-        top: 0px;
-        opacity: 1;
-    }
-    24% {
-        top: 0px;
-        opacity: 1;
-    }
-    36% {
-        top: 0px;
-        opacity: 1;
-        z-index: 0;
-    }
-    40% {
-        top: 485px;
-        opacity: 0;
-        z-index: 0;
-    }
-    41% {
-        top: -485px;
-        opacity: 0;
-        z-index: -1;
-    }
-    100% {
-        top: -485px;
-        opacity: 0;
-        z-index: -1;
-    }
-}
-@keyframes cyclethree {
-    0% {
-        top: -485px;
-        opacity: 0;
-    }
-    36% {
-        top: -485px;
-        opacity: 0;
-    }
-    40% {
-        top: 0px;
-        opacity: 1;
-    }
-    44% {
-        top: 0px;
-        opacity: 1;
-    }
-    56% {
-        top: 0px;
-        opacity: 1;
-    }
-    60% {
-        top: 485px;
-        opacity: 0;
-        z-index: 0;
-    }
-    61% {
-        top: -485px;
-        opacity: 0;
-        z-index: -1;
-    }
-    100% {
-        top: -485px;
-        opacity: 0;
-        z-index: -1;
-    }
-}
-@keyframes cyclefour {
-    0% {
-        top: -485px;
-        opacity: 0;
-    }
-    56% {
-        top: -485px;
-        opacity: 0;
-    }
-    60% {
-        top: 0px;
-        opacity: 1;
-    }
-    64% {
-        top: 0px;
-        opacity: 1;
-    }
-    76% {
-        top: 0px;
-        opacity: 1;
-        z-index: 0;
-    }
-    80% {
-        top: 485px;
-        opacity: 0;
-        z-index: 0;
-    }
-    81% {
-        top: -485px;
-        opacity: 0;
-        z-index: -1;
-    }
-    100% {
-        top: -485px;
-        opacity: 0;
-        z-index: -1;
-    }
-}
-@keyframes cyclefive {
-    0% {
-        top: -485px;
-        opacity: 0;
-    }
-    76% {
-        top: -485px;
-        opacity: 0;
-    }
-    80% {
-        top: 0px;
-        opacity: 1;
-    }
-    84% {
-        top: 0px;
-        opacity: 1;
-    }
-    96% {
-        top: 0px;
-        opacity: 1;
-        z-index: 0;
-    }
-    100% {
-        top: 485px;
-        opacity: 0;
-        z-index: 0;
-    }
 }
 /* ANIMATION BAR */
 
@@ -320,5 +150,35 @@
     98% {
         width: 100%;
         opacity: 0;
+    }
+}
+@keyframes slide-n {
+    0% {
+        top: -485px;
+        opacity: 0;
+    }
+    3.125% {
+        top: 0;
+        opacity: 1;
+    }
+    12.5% {
+        top: 0;
+        opacity: 1;
+        /*z-index: 0;*/
+    }
+    15.625% {
+        top: 485px;
+        opacity: 0;
+        /*z-index: 0;*/
+    }
+    15.656% {
+        top: -485px;
+        opacity: 0;
+        /*z-index: -1;*/
+    }
+    100% {
+        top: -485px;
+        opacity: 0;
+        /*z-index: -1;*/
     }
 }
