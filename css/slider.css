@@ -118,22 +118,22 @@
         z-index: 0;
     }
     20% {
-        top: 325px;
+        top: 485px;
         opacity: 0;
         z-index: 0;
     }
     21% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: -1;
     }
     92% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: 0;
     }
     96% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     100% {
@@ -143,11 +143,11 @@
 }
 @keyframes cycletwo {
     0% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     16% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     20% {
@@ -164,28 +164,28 @@
         z-index: 0;
     }
     40% {
-        top: 325px;
+        top: 485px;
         opacity: 0;
         z-index: 0;
     }
     41% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: -1;
     }
     100% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: -1;
     }
 }
 @keyframes cyclethree {
     0% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     36% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     40% {
@@ -201,28 +201,28 @@
         opacity: 1;
     }
     60% {
-        top: 325px;
+        top: 485px;
         opacity: 0;
         z-index: 0;
     }
     61% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: -1;
     }
     100% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: -1;
     }
 }
 @keyframes cyclefour {
     0% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     56% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     60% {
@@ -239,28 +239,28 @@
         z-index: 0;
     }
     80% {
-        top: 325px;
+        top: 485px;
         opacity: 0;
         z-index: 0;
     }
     81% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: -1;
     }
     100% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
         z-index: -1;
     }
 }
 @keyframes cyclefive {
     0% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     76% {
-        top: -325px;
+        top: -485px;
         opacity: 0;
     }
     80% {
@@ -277,7 +277,7 @@
         z-index: 0;
     }
     100% {
-        top: 325px;
+        top: 485px;
         opacity: 0;
         z-index: 0;
     }
